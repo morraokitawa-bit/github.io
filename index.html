@@ -1,0 +1,345 @@
+# github.io
+Сайт-визитка QA 
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя визитка</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Шапка */
+        .header {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 60px 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 5px solid #e0e0e0;
+            margin-bottom: 20px;
+        }
+
+        .name {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            color: #2c3e50;
+        }
+
+        .profession {
+            font-size: 1.2rem;
+            color: #7f8c8d;
+            margin-bottom: 20px;
+        }
+
+        .greeting {
+            font-size: 1.1rem;
+            color: #555;
+            max-width: 600px;
+        }
+
+        /* О себе */
+        .about {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            font-size: 1.8rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            text-align: center;
+        }
+
+        .about-text {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #555;
+        }
+
+        /* Портфолио */
+        .portfolio {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project-card {
+            background: #f5f5f5;
+            border-radius: 8px;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-image {
+            height: 200px;
+            background: #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #7f8c8d;
+        }
+
+        .project-title {
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #2c3e50;
+        }
+
+        /* Контакты */
+        .contacts {
+            background: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-links {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+            list-style: none;
+        }
+
+        .contact-links li {
+            display: inline;
+        }
+
+        .contact-link {
+            display: inline-block;
+            padding: 10px 20px;
+            background: #3498db;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        .contact-link:hover {
+            background: #2980b9;
+        }
+
+        /* Адаптивность */
+        @media (max-width: 768px) {
+            .header {
+                padding: 40px 20px;
+            }
+
+            .name {
+                font-size: 2rem;
+            }
+
+            .about, .portfolio, .contacts {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <header class="header">
+            <img src="[https://img-webcalypt.ru/img/thumb/lg/images/meme-templates/XbZYtNieYoaghiXbaoznL7bqLE1J12z7.jpg.jpg]" alt="Аватар" class="avatar">
+            <h1 class="name">Мария Сергеева</h1>
+            <p class="profession"> QA Engineer</p>
+            <p class="greeting">Привет! Я тестировщик, который старается быть отличным специалистом!.</p>
+        </header>
+
+        <!-- О себе -->
+        <section class="about">
+            <h2 class="section-title">Обо мне</h2>
+            <p class="about-text">Я работаю в ручном QA около трех лет. Мой основной стек — это Postman, SQL и работа с логами.Понимаю бизнес-цели, умею аргументированно отстаивать качество фичей перед разработчиками и знаю, как сэкономить время бизнеса, отловив критический баг еще на этапе требований. Стремлюсь к постоянному развитию и изучению новых технологий.</p>
+        </section>
+
+       </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Шапка -->
+        <header class="header">
+            <img src="https://via.placeholder.com/150" alt="Аватар" class="avatar">
+            <h1 class="name">Okko</h1>
+            <p class="profession">Тестировщик / QA Middle Manual</p>
+            <p class="experience">4 года и 5 месяцев</p>
+            <p class="experience">Май 2023 — Апрель 2026 (3 года)</p>
+        </header>
+
+        <!-- Ключевые достижения (тестировщик) -->
+        <section class="section">
+            <h2 class="section-title">Ключевые достижения (Тестировщик)</h2>
+            <div class="achievements">
+                <div class="achievement-item">
+                    <strong>Участвовала в интеграции сервиса «Сбер Звук» в раздел «Музыка» Okko:</strong> протестировала 50+ API‑эндпоинтов, выявила и задокументировала 35 критических багов до релиза, что обеспечило беспроблемный запуск для 2 млн пользователей.
+                </div>
+                <div class="achievement-item">
+                    <strong>Обеспечила интеграцию с «Афишей» (покупка билетов в кино):</strong> разработала 120 тест‑кейсов для сквозного тестирования пользовательского пути, сократила количество пост‑релизных инцидентов на 40 %.
+                </div>
+                <div class="achievement-item">
+                    <strong>Оптимизировала процесс тестирования API:</strong> создала и поддержала коллекции Postman (30+ запросов), интегрировала их в процесс ручного регрессионного тестирования — это позволило выявлять 90 % ошибок интеграции на этапе разработки и сократила время проверки API на 25 %.
+                </div>
+                <div class="achievement-item">
+                    <strong>Повысила покрытие тестами мобильного приложения (Android):</strong> разработала 80 тест‑кейсов для ключевых сценариев, выявила 25 багов UX/UI (несоответствие дизайну, проблемы с навигацией), что улучшило оценку приложения в Google Play на 0,5 балла.
+                </div>
+                <div class="achievement-item">
+                    <strong>УсовершенУсовершенствовала тестовую документацию:</strong> актуализировала 50+ тест‑кейсов и чек‑листов для регрессионного набора, что снизило количество пропущенных дефектов на 30 % в последующих релизах.
+                </div>
+                <div class="achievement-item">
+                    <strong>Оптимизировала взаимодействие с разработчиками:</strong> внедрила практику совместных проверок требований перед началом тестирования, что сократила количество переделок на 20 % и ускорила цикл разработки.
+                </div>
+            </div>
+        </section>
+
+        <!-- Опыт работы: Технический писатель -->
+        <section class="section">
+            <h2 class="section-title">Технический писатель</h2>
+            <p class="experience">Декабрь 2021 — Июль 2023 (1 год и 8 месяцев)</p>
+            
+            <h3 class="section-title" style="font-size: 1.5rem; margin-top: 20px;">Достижения</h3>
+            <div class="achievements">
+                <div class="achievement-item">
+                    <strong>Создала и актуализировала 50+ технических документов:</strong> руководства пользователя, спецификации API, инструкции по развёртыванию, сократив время адаптации новых сотрудников на 30 %.
+                </div>
+                <div class="achievement-item">
+            <strong>Разработала шаблон документации для API‑интеграций:</strong> стандартизировав описание эндпоинтов и сценариев использования — это ускорило согласование требований с внешними партнёрами на 25 %.
+                </div>
+            </div>
+
+            <h3 class="section-title" style="font-size: 1.5rem; margin-top: 20px;">Обязанности</h3>
+            <ul class="skills-list">
+                <li>сбор, написание, редактирование и форматирование технической документации;</li>
+                <li>актуализация и организация хранения документов;</li>
+                <li>обеспечение соответствия документации стандартам компании и отрасли;</li>
+                <li>анализ обратной связи для улучшения качества контента.</li>
+            </ul>
+        </section>
+
+        <!-- Навыки по уровням -->
+        <section class="section">
+            <h2 class="section-title">Навыки</h2>
+
+            <div class="level-section">
+                <h3 class="level-title">Продвинутый уровень</h3>
+                <ul class="skills-list">
+                    <li>Atlassian Jira</li>
+                    <li>web</li>
+                    <li>Интеграционное тестирование</li>
+                    <li>Ручное тестирование</li>
+                    <li>Chrome Devtools</li>
+                    <li>Работа с тестовыми окружениями (Dev/Stage/Prod)</li>
+                </ul>
+            </div>
+
+            <div class="level-section">
+                <h3 class="level-title">Средний уровень</h3>
+                <ul class="skills-list">
+                    <li>SQL</li>
+                    <li>Atlassian Confluence</li>
+                    <li>REST API</li>
+                    <li>Кроссбраузерное тестирование</li>
+                    <li>Charles Proxy</li>
+                    <li>Postman</li>
+                    <li>Методология тестирования</li>
+                    <li>A/B тесты</li>
+                    <li>Регрессионное тестирование</li>
+                    <li>PostgreSQL</li>
+                    <li>Use case</li>
+                    <li>Git</li>
+                    <li>Банковские операции</li>
+                    <li>Smoke-тестирование</li>
+                    <li>Кроссплатформенное тестирование</li>
+                    <li>Функциональное тестирование</li>
+                    <li>User Acceptance Testing</li>
+                    <li>Тест-дизайн</li>
+                    <li>UX/UI тестирование</li>
+                </ul>
+            </div>
+
+            <div class="level-section">
+                <h3 class="level-title">Базовый уровень</h3>
+                <ul class="skills-list">
+                    <li>Apache JMeter</li>
+                    <li>Python/JavaScript</li>
+                    <li>CI/CD</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Портфолио -->
+        <section class="portfolio">
+            <h2 class="section-title">Портфолио</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">Проект 1</div>
+                    <h3 class="project-title">Тестирование API</h3>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">Проект 2</div>
+                    <h3 class="project-title">UI/UX аудит</h3>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">Проект 3</div>
+                    <h3 class="project-title">Автоматизация отчётов</h3>
+                </div>
+                <div class="project-card">
+                    <div class="project-image">Проект 4</div>
+                    <h3 class="project-title">Документация API</h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts">
+            <h2 class="section-title">Контакты</h2>
+            <ul class="contact-links">
+                <li><a href="https://t.me/morra_okitawa" class="contact-link" target="_blank">Telegram</a></li>
+                <li><a href="mailto:morraokitawa@gmail.com" class="contact-link">Email</a></li>
+            </ul>
+        </section>
+    </div>
+</body>
+</html>
